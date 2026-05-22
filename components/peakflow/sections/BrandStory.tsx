@@ -36,7 +36,7 @@ export function BrandStory() {
   }, { scope: sectionRef });
 
   return (
-    <section ref={sectionRef} className="py-60 bg-[#191919] text-white relative overflow-hidden">
+    <section ref={sectionRef} data-theme="dark" className="py-60 bg-[#191919] text-white relative overflow-hidden">
       {/* Background Image with Deep Gradient Overlay */}
       <div className="absolute inset-0 z-0">
          <img 
@@ -52,7 +52,7 @@ export function BrandStory() {
         <div className="grid lg:grid-cols-2 gap-20 items-center">
           <div ref={textRef} className="will-change-transform">
             <Reveal>
-              <span className="text-[#0272C9] font-bold tracking-[0.5em] uppercase text-[10px] mb-12 block">Our Ethos</span>
+              <span className="text-[#0272C9] font-bold tracking-[0.5em] uppercase text-[0.625rem] mb-12 block">Our Ethos</span>
             </Reveal>
             
             <h3 className="text-6xl md:text-8xl font-display font-bold tracking-tighter leading-[0.85] mb-16">
@@ -64,7 +64,7 @@ export function BrandStory() {
             
             <Reveal delay={200}>
               <div className="flex items-center gap-6 group cursor-default">
-                <div className="w-16 h-[1px] bg-[#0272C9] group-hover:w-24 transition-all duration-500" />
+                <div className="w-16 h-[0.0625rem] bg-[#0272C9] group-hover:w-24 transition-all duration-500" />
                 <p className="text-xl font-light opacity-60 leading-relaxed max-w-sm">
                   Rooted in the Himalayas, designed for a digital world that never stops moving.
                 </p>
@@ -76,7 +76,7 @@ export function BrandStory() {
           <div className="hidden lg:block relative h-[60vh] border border-white/10 p-12 overflow-hidden group">
             <div className="absolute top-0 right-0 w-32 h-32 border-t border-r border-[#0272C9] opacity-40 group-hover:w-full group-hover:h-full transition-all duration-1000" />
             <div className="relative z-10 h-full flex flex-col justify-end">
-               <span className="text-[12vw] font-display font-black opacity-[0.03] leading-none mb-8">CRAFT</span>
+               <span className="text-[12rem] font-display font-black opacity-[0.03] leading-none mb-8">CRAFT</span>
                <p className="text-sm font-medium tracking-[0.3em] uppercase opacity-40">Precision Build · Local Roots</p>
             </div>
           </div>

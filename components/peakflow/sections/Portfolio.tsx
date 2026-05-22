@@ -85,7 +85,7 @@ export function Portfolio() {
         <Reveal>
           <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-10 lg:gap-20">
             <div className="max-w-4xl">
-              <span className="text-[#0272C9] font-bold tracking-[0.5em] uppercase text-[10px] mb-8 block">Selected Works</span>
+              <span className="text-[#0272C9] font-bold tracking-[0.5em] uppercase text-[0.625rem] mb-8 block">Selected Works</span>
               <h3 className="text-7xl md:text-8xl font-display font-bold text-[#191919] tracking-tighter leading-[0.8] mb-10">
                 Studio <br /> <span className="italic text-[#0272C9]">Archive.</span>
               </h3>
@@ -95,7 +95,7 @@ export function Portfolio() {
               <p className="text-xl text-[#4F4543] font-light leading-relaxed mb-6">
                 Our portfolio is a collection of digital landmarks—each built with technical precision and a deep understanding of brand heritage.
               </p>
-              <p className="text-[10px] text-[#191919]/40 font-bold uppercase tracking-[0.5em] leading-loose">
+              <p className="text-[0.625rem] text-[#191919]/40 font-bold uppercase tracking-[0.5em] leading-loose">
                 Specializing in Tourism <br /> & Hospitality Excellence.
               </p>
             </div>
@@ -104,7 +104,7 @@ export function Portfolio() {
       </div>
 
       <div ref={triggerRef} className="h-screen flex items-center relative overflow-hidden bg-[#fcfcfc]">
-        <div ref={galleryRef} className="flex gap-40 px-[15vw] flex-nowrap items-start h-[80vh] py-10 will-change-transform">
+        <div ref={galleryRef} className="flex gap-40 px-[15rem] flex-nowrap items-start h-[80vh] py-10 will-change-transform">
           {PROJECTS.map((project, i) => (
             <div key={i} className={`flex-shrink-0 ${project.width} ${project.height} ${project.offset} group relative`}>
               <div className="w-full h-full relative overflow-hidden bg-white border border-[#191919]/5 rounded-2xl shadow-xl transition-all duration-700">
@@ -119,17 +119,17 @@ export function Portfolio() {
                 
                 <div className="absolute inset-0 p-12 flex flex-col justify-between">
                   <div className="flex justify-between items-start">
-                    <span className="text-white text-[10px] font-bold uppercase tracking-[0.3em] bg-[#191919]/50 backdrop-blur-md px-4 py-2 rounded-full">
+                    <span className="text-white text-[0.625rem] font-bold uppercase tracking-[0.3em] bg-[#191919]/50 backdrop-blur-md px-4 py-2 rounded-full">
                       {`0${i + 1}`}
                     </span>
-                    <span className="text-white/40 text-[10px] font-bold uppercase tracking-widest">{project.year}</span>
+                    <span className="text-white/40 text-[0.625rem] font-bold uppercase tracking-widest">{project.year}</span>
                   </div>
                   
                   <div>
-                    <span className="text-white/60 font-bold uppercase tracking-[0.3em] text-[10px] mb-4 block">{project.category}</span>
+                    <span className="text-white/60 font-bold uppercase tracking-[0.3em] text-[0.625rem] mb-4 block">{project.category}</span>
                     <h4 className="!text-white text-4xl md:text-6xl font-display font-bold tracking-tighter mb-8 leading-none">{project.title}</h4>
                     
-                    <MagneticButton className="px-8 py-4 bg-white text-[#191919] rounded-full text-[10px] font-bold uppercase tracking-widest flex items-center gap-3 group/btn hover:bg-[#0272C9] hover:text-white transition-all">
+                    <MagneticButton className="px-8 py-4 bg-white text-[#191919] rounded-full text-[0.625rem] font-bold uppercase tracking-widest flex items-center gap-3 group/btn hover:bg-[#0272C9] hover:text-white transition-all">
                       View Case <ArrowUpRight className="w-4 h-4" />
                     </MagneticButton>
                   </div>
@@ -138,11 +138,11 @@ export function Portfolio() {
             </div>
           ))}
           
-          <div className="flex-shrink-0 w-[40vw] h-full flex flex-col items-center justify-center text-center">
+          <div className="flex-shrink-0 w-[40rem] h-full flex flex-col items-center justify-center text-center">
             <h5 className="text-3xl md:text-6xl lg:text-7xl font-display font-bold text-[#191919] leading-tight mb-12 uppercase tracking-tighter">
               Your project <br /> <span className="text-[#0272C9] italic">could be the next.</span>
             </h5>
-            <MagneticButton className="px-12 py-6 bg-[#0272C9] text-white rounded-full font-bold uppercase tracking-widest text-[10px] flex items-center gap-4 hover:bg-[#191919] transition-all shadow-xl">
+            <MagneticButton className="px-12 py-6 bg-[#0272C9] text-white rounded-full font-bold uppercase tracking-widest text-[0.625rem] flex items-center gap-4 hover:bg-[#191919] transition-all shadow-xl">
               Start Project <ArrowRight className="w-4 h-4" />
             </MagneticButton>
           </div>

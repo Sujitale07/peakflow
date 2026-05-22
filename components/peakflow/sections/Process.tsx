@@ -52,17 +52,25 @@ export function Process() {
     <section ref={containerRef} className="py-60 bg-white relative overflow-hidden" id="process">
       <div className="container mx-auto px-6">
         <Reveal className="mb-40">
-           <div className="max-w-4xl">
-              <span className="text-[#0272C9] font-bold tracking-[0.5em] uppercase text-[10px] mb-8 block">Our Method</span>
-              <h3 className="text-7xl md:text-8xl font-display font-bold text-[#191919] tracking-tighter leading-[0.8] mb-12">
-                The <br /> <span className="italic text-[#0272C9]">Journey.</span>
-              </h3>
+           <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-12">
+              <div className="max-w-4xl">
+                 <span className="text-[#0272C9] font-bold tracking-[0.5em] uppercase text-[0.625rem] mb-8 block">Our Method</span>
+                 <h3 className="text-7xl md:text-8xl font-display font-bold text-[#191919] tracking-tighter leading-[0.8]">
+                   The <br /> <span className="italic text-[#0272C9]">Journey.</span>
+                 </h3>
+              </div>
+              <div className="max-w-sm">
+                 <p className="text-lg text-[#4F4543] font-light leading-relaxed mb-4">
+                   Precision-engineered steps designed to elevate your brand from initial strategy to global scaling.
+                 </p>
+                 <div className="w-12 h-[0.0625rem] bg-[#0272C9]" />
+              </div>
            </div>
         </Reveal>
         
         <div className="relative max-w-6xl mx-auto">
           {/* Progress Line */}
-          <div className="absolute left-0 md:left-1/2 top-0 bottom-0 w-[1px] bg-[#191919]/5 -translate-x-1/2 hidden md:block">
+          <div className="absolute left-0 md:left-1/2 top-0 bottom-0 w-[0.0625rem] bg-[#191919]/5 -translate-x-1/2 hidden md:block">
             <div ref={lineRef} className="w-full h-full bg-[#0272C9] origin-top scale-y-0" />
           </div>
 

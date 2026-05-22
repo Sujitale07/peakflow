@@ -31,7 +31,7 @@ export function Footer() {
         </div>
         
         <div className="mt-20 pt-10 border-t border-[#191919]/5 text-center">
-          <span className="text-[10vw] font-display font-bold text-[#191919]/[0.03] select-none tracking-tighter">PEAKFLOW STUDIO</span>
+          <span className="text-[10rem] font-display font-bold text-[#191919]/[0.03] select-none tracking-tighter">PEAKFLOW STUDIO</span>
         </div>
       </div>
     </footer>

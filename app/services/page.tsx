@@ -1,6 +1,5 @@
 "use client";
 import React from 'react';
-import { Navigation } from "@/components/peakflow/sections/Navigation";
 import { Footer } from "@/components/peakflow/sections/Footer";
 import { SmoothScroll } from "@/components/peakflow/ui/SmoothScroll";
 import { Reveal } from "@/components/peakflow/ui/Reveal";
@@ -28,11 +27,10 @@ const DETAILED_SERVICES = [
 export default function ServicesPage() {
   return (
     <main className="bg-white min-h-screen font-sans selection:bg-[#0272C9] selection:text-white">
-      <Navigation />
       
       <SmoothScroll>
         {/* Hero Section */}
-        <section className="pt-60 pb-40 bg-[#191919] text-white">
+        <section data-theme="dark" className="pt-60 pb-40 bg-[#191919] text-white">
           <div className="container mx-auto px-6">
             <Reveal>
               <span className="text-[#0272C9] font-bold tracking-[0.5em] uppercase text-[10px] mb-8 block">Our Expertise</span>

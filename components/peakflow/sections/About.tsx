@@ -30,13 +30,13 @@ export function About() {
           <div>
             <Reveal>
               <div className="flex items-center gap-6 mb-12">
-                 <div className="w-12 h-[2px] bg-[#0272C9]" />
-                 <h2 className="text-[#0272C9] font-bold tracking-[0.5em] uppercase text-[10px]">Philosophy</h2>
+                 <div className="w-12 h-[0.125rem] bg-[#0272C9]" />
+                 <h2 className="text-[#0272C9] font-bold tracking-[0.5em] uppercase text-[0.625rem]">Philosophy</h2>
               </div>
             </Reveal>
             <Reveal delay={200}>
               <h3 className="text-7xl md:text-8xl font-display font-bold text-[#191919] leading-[0.9] tracking-tighter">
-                We don't build websites. We build <span className="text-[#0272C9] italic underline decoration-4 underline-offset-[12px] decoration-[#0272C9]/20">digital landmarks.</span>
+                We don't build websites. We build <span className="text-[#0272C9] italic underline decoration-4 underline-offset-[0.75rem] decoration-[#0272C9]/20">digital landmarks.</span>
               </h3>
             </Reveal>
           </div>
@@ -54,15 +54,15 @@ export function About() {
               <div className="group">
                 <span className="block text-9xl font-display font-black text-[#191919] tracking-tighter mb-4 group-hover:text-[#0272C9] transition-colors duration-500">100</span>
                 <div className="flex items-center gap-4">
-                  <div className="w-4 h-[1px] bg-[#0272C9]" />
-                  <span className="text-[#4F4543] text-[10px] font-black uppercase tracking-widest">Satisfaction %</span>
+                  <div className="w-4 h-[0.0625rem] bg-[#0272C9]" />
+                  <span className="text-[#4F4543] text-[0.625rem] font-black uppercase tracking-widest">Satisfaction %</span>
                 </div>
               </div>
               <div className="group">
                 <span className="block text-9xl font-display font-black text-[#191919] tracking-tighter mb-4 group-hover:text-[#0272C9] transition-colors duration-500">50+</span>
                 <div className="flex items-center gap-4">
-                  <div className="w-4 h-[1px] bg-[#0272C9]" />
-                  <span className="text-[#4F4543] text-[10px] font-black uppercase tracking-widest">World-Class Projects</span>
+                  <div className="w-4 h-[0.0625rem] bg-[#0272C9]" />
+                  <span className="text-[#4F4543] text-[0.625rem] font-black uppercase tracking-widest">World-Class Projects</span>
                 </div>
               </div>
             </div>
@@ -73,7 +73,7 @@ export function About() {
       {/* Background Decorative Text */}
       <div 
         ref={bgTextRef}
-        className="absolute bottom-10 left-0 w-[300%] whitespace-nowrap text-[30vw] font-black text-[#191919]/[0.01] select-none pointer-events-none leading-none uppercase tracking-tighter"
+        className="absolute bottom-10 left-0 w-[300%] whitespace-nowrap text-[30rem] font-black text-[#191919]/[0.01] select-none pointer-events-none leading-none uppercase tracking-tighter"
       >
         LANDMARKS LANDMARKS LANDMARKS LANDMARKS
       </div>

@@ -32,10 +32,10 @@ export function Contact() {
   }, { scope: containerRef });
 
   return (
-    <section ref={containerRef} className="py-40 bg-[#191919] relative overflow-hidden" id="contact">
+    <section ref={containerRef} data-theme="dark" className="py-40 bg-[#191919] relative overflow-hidden" id="contact">
       {/* Background Decorative Grid */}
-      <div className="absolute inset-0 z-0 opacity-[0.05] pointer-events-none" 
-        style={{ backgroundImage: `radial-gradient(#ffffff 1px, transparent 1px)`, backgroundSize: '40px 40px' }} 
+      <div className="absolute inset-0 z-0 opacity-[0.03] pointer-events-none" 
+        style={{ backgroundImage: `radial-gradient(#ffffff 1px, transparent 1px)`, backgroundSize: '2.5rem 2.5rem' }} 
       />
       
       <div className="container mx-auto px-6 relative z-10">
@@ -58,7 +58,7 @@ export function Contact() {
 
         <div className="max-w-6xl mx-auto">
           <Reveal>
-            <h2 className="text-[#0272C9] font-bold tracking-[0.4em] uppercase text-[10px] mb-12 text-center">Ready to scale?</h2>
+            <h2 className="text-[#0272C9] font-bold tracking-[0.4em] uppercase text-[0.625rem] mb-12 text-center">Ready to scale?</h2>
           </Reveal>
           
           <Reveal delay={200}>

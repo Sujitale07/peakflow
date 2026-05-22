@@ -12,6 +12,8 @@ export function Cursor() {
     const follower = followerRef.current;
     if (!cursor || !follower) return;
 
+    gsap.set([cursor, follower], { xPercent: -50, yPercent: -50 });
+
     const onMouseMove = (e: MouseEvent) => {
       // Smooth movement for cursor
       gsap.to(cursor, {
@@ -83,14 +85,14 @@ export function Cursor() {
       {/* Small Dot */}
       <div 
         ref={cursorRef}
-        className="fixed top-0 left-0 w-2 h-2 bg-[#0272C9] rounded-full pointer-events-none z-[999] mix-blend-difference -translate-x-1/2 -translate-y-1/2"
+        className="fixed top-0 left-0 w-2 h-2 bg-[#0272C9] rounded-full pointer-events-none z-[10000001] mix-blend-difference -translate-x-1/2 -translate-y-1/2"
       />
       {/* Large Follower */}
       <div 
         ref={followerRef}
-        className="fixed top-0 left-0 w-10 h-10 border border-[#191919]/20 rounded-full pointer-events-none z-[998] -translate-x-1/2 -translate-y-1/2 flex items-center justify-center overflow-hidden"
+        className="fixed top-0 left-0 w-10 h-10 border border-[#191919]/20 rounded-full pointer-events-none z-[10000001] -translate-x-1/2 -translate-y-1/2 flex items-center justify-center overflow-hidden"
       >
-        <span className="text-[6px] font-black text-white tracking-widest">{cursorText}</span>
+        <span className="text-[0.375rem] font-black text-white tracking-widest">{cursorText}</span>
       </div>
     </>
   );

@@ -1,6 +1,5 @@
 "use client";
 import React from 'react';
-import { Navigation } from "@/components/peakflow/sections/Navigation";
 import { Footer } from "@/components/peakflow/sections/Footer";
 import { SmoothScroll } from "@/components/peakflow/ui/SmoothScroll";
 import { Reveal } from "@/components/peakflow/ui/Reveal";
@@ -41,7 +40,6 @@ const POSTS = [
 export default function BlogPage() {
   return (
     <main className="bg-white min-h-screen font-sans selection:bg-[#0272C9] selection:text-white">
-      <Navigation />
       
       <SmoothScroll>
         <section className="pt-60 pb-40">

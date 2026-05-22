@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700;800&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -8,8 +9,64 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --font-sans: 'Inter', var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  
+  /* Make container fluid to maintain proportions */
+  --container-max-width-sm: 100%;
+  --container-max-width-md: 100%;
+  --container-max-width-lg: 100%;
+  --container-max-width-xl: 100%;
+  --container-max-width-2xl: 100%;
+}
+
+@layer base {
+  html {
+    /* 
+       Dynamic Viewport Scaling
+       Everything in the project uses 'rem' units, which are relative to this root size.
+       By making the root size viewport-relative, the entire design (spacing, fonts, icons)
+       scales perfectly with the screen width, maintaining the original design proportions.
+    */
+    
+    /* Mobile Scale: Slightly scaled down for a tighter editorial look */
+    /* Targets approx 14px at 390px width */
+    font-size: 3.589744vw;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  @media (min-width: 768px) {
+    html {
+      /* Desktop Scale: Scaled down from 1vw to 0.85vw for a more refined feel */
+      /* 16px at approx 1880px width */
+      font-size: 0.85vw; 
+    }
+  }
+
+  /* Cap the scaling on ultra-wide screens to prevent massive UI */
+  @media (min-width: 2200px) {
+    html {
+      font-size: 22px;
+    }
+  }
+
+  body {
+    background-color: var(--background);
+    color: #191919;
+    font-family: 'Inter', sans-serif;
+    cursor: none;
+    overflow-x: hidden;
+  }
+
+  .font-display {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+
+  /* Ensure cursor-none applies everywhere */
+  * {
+    cursor: none !important;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,8 +76,13 @@
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Lenis Smooth Scroll Support */
+html.lenis {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
 }

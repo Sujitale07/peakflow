@@ -46,7 +46,7 @@ export function Hero() {
           </Reveal>
           
           <div ref={titleRef} className="will-change-transform">
-            <h1 className="text-[12vw] md:text-[8vw] lg:text-[7.5vw] font-display font-bold leading-[0.9] text-[#191919] tracking-tighter mb-12">
+            <h1 className="text-[12rem] md:text-[8rem] lg:text-[7.5rem] font-display font-bold leading-[0.9] text-[#191919] tracking-tighter mb-12">
               <div className="flex flex-col items-center">
                 <SplitText text="Elevating the" delay={300} />
                 <div className="text-[#0272C9] italic flex items-center min-h-[1.1em]">

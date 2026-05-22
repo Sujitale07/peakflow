@@ -1,6 +1,5 @@
 "use client";
 import React from 'react';
-import { Navigation } from "@/components/peakflow/sections/Navigation";
 import { Footer } from "@/components/peakflow/sections/Footer";
 import { SmoothScroll } from "@/components/peakflow/ui/SmoothScroll";
 import { Reveal } from "@/components/peakflow/ui/Reveal";
@@ -27,7 +26,6 @@ export default function CaseStudyPage({ params }: { params: Promise<{ slug: stri
 
   return (
     <main className="bg-white min-h-screen font-sans selection:bg-[#0272C9] selection:text-white">
-      <Navigation />
       
       <SmoothScroll>
         <section className="pt-60 pb-20">
@@ -40,7 +38,7 @@ export default function CaseStudyPage({ params }: { params: Promise<{ slug: stri
               <div className="grid lg:grid-cols-2 gap-20 items-end mb-20">
                 <div>
                   <span className="text-[#0272C9] font-bold tracking-[0.5em] uppercase text-[10px] mb-8 block">Project Showcase</span>
-                  <h1 className="text-6xl md:text-[8vw] font-display font-bold text-[#191919] tracking-tighter leading-[0.8] mb-0">
+                  <h1 className="text-6xl md:text-[8rem] font-display font-bold text-[#191919] tracking-tighter leading-[0.8] mb-0">
                     {project.title}
                   </h1>
                 </div>

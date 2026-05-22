@@ -52,12 +52,18 @@ export function Services() {
     <section ref={containerRef} className="py-40 bg-white relative overflow-hidden" id="services">
       <div className="container mx-auto px-6 relative z-10">
         <Reveal className="mb-32">
-           <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-10">
+           <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-12">
               <div className="max-w-4xl">
-                 <span className="text-[#0272C9] font-bold tracking-[0.5em] uppercase text-[10px] mb-8 block">Our Focus</span>
-                 <h3 className="text-7xl md:text-8xl font-display font-bold text-[#191919] tracking-tighter leading-[0.8] mb-12">
+                 <span className="text-[#0272C9] font-bold tracking-[0.5em] uppercase text-[0.625rem] mb-8 block">Our Focus</span>
+                 <h3 className="text-7xl md:text-8xl font-display font-bold text-[#191919] tracking-tighter leading-[0.8]">
                    Strategic <br /> <span className="italic text-[#0272C9]">Impact.</span>
                  </h3>
+              </div>
+              <div className="max-w-sm">
+                 <p className="text-lg text-[#4F4543] font-light leading-relaxed mb-4">
+                   We deliver precision-engineered solutions that don't just look stunning—they drive measurable growth and define industry benchmarks.
+                 </p>
+                 <div className="w-12 h-[0.0625rem] bg-[#0272C9]" />
               </div>
            </div>
         </Reveal>

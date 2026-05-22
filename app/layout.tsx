@@ -2,6 +2,11 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
+import { Cursor } from "@/components/peakflow/ui/Cursor";
+import { Navigation } from "@/components/peakflow/sections/Navigation";
+import { ScrollProgress } from "@/components/peakflow/ui/ScrollProgress";
+import { Grain } from "@/components/peakflow/ui/Grain";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -81,6 +86,10 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col">
+        <ScrollProgress />
+        <Grain />
+        <Cursor />
+        <Navigation />
         {children}
         <script
           type="application/ld+json"

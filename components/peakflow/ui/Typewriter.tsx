@@ -57,7 +57,7 @@ export function Typewriter({
   return (
     <span className="inline-flex items-center">
       <span>{words[index].substring(0, subIndex)}</span>
-      <span className={`${blink ? 'opacity-80' : 'opacity-0'} ml-1 w-[15px] h-[1em] bg-[#191919] inline-block transition-opacity duration-400`} />
+      <span className={`${blink ? 'opacity-80' : 'opacity-0'} ml-1 w-[0.9375rem] h-[1em] bg-[#191919] inline-block transition-opacity duration-400`} />
     </span>
   );
 }

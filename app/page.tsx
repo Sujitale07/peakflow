@@ -54,11 +54,6 @@ export default function Page() {
       
       {loading && <Loader onComplete={() => setLoading(false)} />}
       
-      <ScrollProgress />
-      <Grain />
-      <Cursor />
-      <Navigation />
-      
       <SmoothScroll>
         <Hero />
         <About />

@@ -32,13 +32,13 @@ export function Loader({ onComplete }: { onComplete: () => void }) {
   }, { scope: containerRef });
 
   return (
-    <div ref={containerRef} className="fixed inset-0 z-[2000] bg-[#191919] flex flex-col items-center justify-center overflow-hidden">
+    <div ref={containerRef} className="fixed inset-0 z-[20000000] bg-[#191919] flex flex-col items-center justify-center overflow-hidden">
       <div className="overflow-hidden mb-8">
         <div ref={textRef} className="text-white font-display text-4xl md:text-6xl font-bold tracking-tighter">
           PeakFlow<span className="text-[#0272C9]">.</span>
         </div>
       </div>
-      <div className="w-48 h-[1px] bg-white/10 relative">
+      <div className="w-48 h-[0.0625rem] bg-white/10 relative">
         <div ref={barRef} className="absolute inset-0 bg-[#0272C9] scale-x-0 origin-left" />
       </div>
     </div>
