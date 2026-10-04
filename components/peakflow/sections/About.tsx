@@ -24,48 +24,34 @@ export function About() {
   }, { scope: sectionRef });
 
   return (
-    <section ref={sectionRef} className="py-60 bg-white relative overflow-hidden">
+    <section ref={sectionRef} className="py-40 bg-[#FFFFFF] relative overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-32 items-start relative z-10">
           <div>
             <Reveal>
               <div className="flex items-center gap-6 mb-12">
-                 <div className="w-12 h-[0.125rem] bg-[#0272C9]" />
-                 <h2 className="text-[#0272C9] font-bold tracking-[0.5em] uppercase text-[0.625rem]">Philosophy</h2>
+                 <div className="w-12 h-[0.125rem] bg-[#C49A45]" />
+                 <h2 className="text-[#C49A45] font-bold tracking-[0.5em] uppercase text-[0.625rem]">The Problem</h2>
               </div>
             </Reveal>
             <Reveal delay={200}>
-              <h3 className="text-7xl md:text-8xl font-display font-bold text-[#191919] leading-[0.9] tracking-tighter">
-                We don't build websites. We build <span className="text-[#0272C9] italic underline decoration-4 underline-offset-[0.75rem] decoration-[#0272C9]/20">digital landmarks.</span>
+              <h3 className="text-6xl md:text-7xl font-display font-bold text-[#0A0A0A] leading-[1.1] tracking-tighter">
+                A slow or outdated site is costing you <span className="text-[#C49A45] italic underline decoration-4 underline-offset-[0.75rem] decoration-[#C49A45]/20">more than you think.</span>
               </h3>
             </Reveal>
           </div>
           
-          <div className="pt-20 lg:pt-60">
+          <div className="pt-10 lg:pt-32">
             <Reveal delay={400}>
-              <p className="text-2xl md:text-3xl text-[#4F4543] font-light leading-relaxed mb-20 opacity-80">
-                PeakFlow is a boutique digital studio headquartered in Pokhara. 
-                We specialize in high-performance WordPress systems for the bold and the visionary.
+              <p className="text-xl md:text-2xl text-[#6B6F6A] font-light leading-relaxed mb-20 opacity-80 font-body">
+                Whether it's a tour operator losing bookings to a clunky mobile site, a local business missing leads because there's no clear way to contact them, or an agency stretched too thin to take on another build — the fix is usually the same.
               </p>
             </Reveal>
-            
-            <div className="grid grid-cols-2 gap-20 pt-20 border-t border-[#191919]/10 relative">
-               {/* Design Skill: Large Decorative Number with Perspective */}
-              <div className="group">
-                <span className="block text-9xl font-display font-black text-[#191919] tracking-tighter mb-4 group-hover:text-[#0272C9] transition-colors duration-500">100</span>
-                <div className="flex items-center gap-4">
-                  <div className="w-4 h-[0.0625rem] bg-[#0272C9]" />
-                  <span className="text-[#4F4543] text-[0.625rem] font-black uppercase tracking-widest">Satisfaction %</span>
-                </div>
-              </div>
-              <div className="group">
-                <span className="block text-9xl font-display font-black text-[#191919] tracking-tighter mb-4 group-hover:text-[#0272C9] transition-colors duration-500">50+</span>
-                <div className="flex items-center gap-4">
-                  <div className="w-4 h-[0.0625rem] bg-[#0272C9]" />
-                  <span className="text-[#4F4543] text-[0.625rem] font-black uppercase tracking-widest">World-Class Projects</span>
-                </div>
-              </div>
-            </div>
+            <Reveal delay={500}>
+              <p className="text-2xl md:text-3xl text-[#0A0A0A] font-medium leading-relaxed font-body">
+                You need a site or system that's fast, clear, and built around getting a result, not just existing online. <br/><br/><span className="text-[#C49A45] font-bold">That's what we build.</span>
+              </p>
+            </Reveal>
           </div>
         </div>
       </div>
@@ -73,9 +59,9 @@ export function About() {
       {/* Background Decorative Text */}
       <div 
         ref={bgTextRef}
-        className="absolute bottom-10 left-0 w-[300%] whitespace-nowrap text-[30rem] font-black text-[#191919]/[0.01] select-none pointer-events-none leading-none uppercase tracking-tighter"
+        className="absolute bottom-10 left-0 w-[300%] whitespace-nowrap text-[30rem] font-black text-[#0A0A0A]/[0.01] select-none pointer-events-none leading-none uppercase tracking-tighter"
       >
-        LANDMARKS LANDMARKS LANDMARKS LANDMARKS
+        RESULTS RESULTS RESULTS RESULTS
       </div>
     </section>
   );

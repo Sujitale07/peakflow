@@ -36,7 +36,7 @@ export function BrandStory() {
   }, { scope: sectionRef });
 
   return (
-    <section ref={sectionRef} data-theme="dark" className="py-60 bg-[#191919] text-white relative overflow-hidden">
+    <section ref={sectionRef} data-theme="dark" className="py-60 bg-[#000000] text-[#FFFFFF] relative overflow-hidden">
       {/* Background Image with Deep Gradient Overlay */}
       <div className="absolute inset-0 z-0">
          <img 
@@ -45,27 +45,27 @@ export function BrandStory() {
             alt="Mountain Landscape" 
             className="w-full h-full object-cover opacity-30 grayscale"
          />
-         <div className="absolute inset-0 bg-gradient-to-r from-[#191919] via-[#191919]/80 to-transparent" />
+         <div className="absolute inset-0 bg-gradient-to-r from-[#000000] via-[#000000]/80 to-transparent" />
       </div>
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-20 items-center">
           <div ref={textRef} className="will-change-transform">
             <Reveal>
-              <span className="text-[#0272C9] font-bold tracking-[0.5em] uppercase text-[0.625rem] mb-12 block">Our Ethos</span>
+              <span className="text-[#C49A45] font-bold tracking-[0.5em] uppercase text-[0.625rem] mb-12 block">Our Ethos</span>
             </Reveal>
             
             <h3 className="text-6xl md:text-8xl font-display font-bold tracking-tighter leading-[0.85] mb-16">
               We bridge <br /> 
               the gap between <br /> 
-              <span className="italic text-[#0272C9]">heritage</span> & <br /> 
+              <span className="italic text-[#C49A45]">heritage</span> & <br /> 
               <span className="italic">innovation.</span>
             </h3>
             
             <Reveal delay={200}>
               <div className="flex items-center gap-6 group cursor-default">
-                <div className="w-16 h-[0.0625rem] bg-[#0272C9] group-hover:w-24 transition-all duration-500" />
-                <p className="text-xl font-light opacity-60 leading-relaxed max-w-sm">
+                <div className="w-16 h-[0.0625rem] bg-[#C49A45] group-hover:w-24 transition-all duration-500" />
+                <p className="text-xl font-light opacity-60 leading-relaxed max-w-sm font-body">
                   Rooted in the Himalayas, designed for a digital world that never stops moving.
                 </p>
               </div>
@@ -73,8 +73,8 @@ export function BrandStory() {
           </div>
           
           {/* Design Skill: Geometric Framing */}
-          <div className="hidden lg:block relative h-[60vh] border border-white/10 p-12 overflow-hidden group">
-            <div className="absolute top-0 right-0 w-32 h-32 border-t border-r border-[#0272C9] opacity-40 group-hover:w-full group-hover:h-full transition-all duration-1000" />
+          <div className="hidden lg:block relative h-[60vh] border border-[#FFFFFF]/10 p-12 overflow-hidden group">
+            <div className="absolute top-0 right-0 w-32 h-32 border-t border-r border-[#C49A45] opacity-40 group-hover:w-full group-hover:h-full transition-all duration-1000" />
             <div className="relative z-10 h-full flex flex-col justify-end">
                <span className="text-[12rem] font-display font-black opacity-[0.03] leading-none mb-8">CRAFT</span>
                <p className="text-sm font-medium tracking-[0.3em] uppercase opacity-40">Precision Build · Local Roots</p>

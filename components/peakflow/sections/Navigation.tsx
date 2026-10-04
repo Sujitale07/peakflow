@@ -73,16 +73,16 @@ export function Navigation() {
       <header 
         className={`fixed top-0 w-full z-[9999] transition-all duration-500 ${
           scrolled 
-            ? 'py-4 bg-white/90 backdrop-blur-md border-b border-[#191919]/5' 
+            ? 'py-4 bg-[#FFFFFF]/90 backdrop-blur-md border-b border-[#0A0A0A]/5' 
             : 'py-8 bg-transparent'
         }`}
       >
         <div className={`container mx-auto px-6 flex justify-between items-center transition-colors duration-500 ${
-          isLightText ? 'text-white' : 'text-[#191919]'
+          isLightText ? 'text-[#FFFFFF]' : 'text-[#0A0A0A]'
         }`}>
           <Link href="/" className="flex items-center gap-2 group">
-              {/* <img src="/logo.png" alt="PeakFlow Web Studio Logo" className="h-14 overflow-hidden transition-transform duration-500" /> */}
-              <span className="text-2xl font-display font-bold">PeakFlow Studio<span className="text-[#0272C9]">.</span></span>
+              {/* <img src="/logo.png" alt="Arclyn Studio Logo" className="h-14 overflow-hidden transition-transform duration-500" /> */}
+              <span className="text-2xl font-display font-bold">Arclyn Studio<span className="text-[#C49A45]">.</span></span>
           </Link>
 
           <nav className="hidden lg:flex items-center gap-12">
@@ -90,17 +90,17 @@ export function Navigation() {
               <Link 
                 key={link.name} 
                 href={link.href} 
-                className="text-sm font-bold uppercase tracking-widest hover:text-[#0272C9] transition-colors relative group z-[10001] pointer-events-auto"
+                className="text-sm font-bold uppercase tracking-widest hover:text-[#C49A45] transition-colors relative group z-[10001] pointer-events-auto"
               >
                 {link.name}
-                <span className="absolute -bottom-1 left-0 w-0 h-[0.125rem] bg-[#0272C9] group-hover:w-full transition-all duration-300" />
+                <span className="absolute -bottom-1 left-0 w-0 h-[0.125rem] bg-[#C49A45] group-hover:w-full transition-all duration-300" />
               </Link>
             ))}
             <MagneticButton className={`px-6 py-3 rounded-full text-xs font-bold uppercase tracking-widest group overflow-hidden transition-all duration-500 ${
-              isLightText ? 'bg-white text-[#191919]' : 'bg-[#191919] text-white'
+              isLightText ? 'bg-[#FFFFFF] text-[#0A0A0A]' : 'bg-[#0A0A0A] text-[#FFFFFF]'
             }`}>
               <span className="relative z-10">Start a Project</span>
-              <div className="absolute inset-0 bg-[#0272C9] scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
+              <div className="absolute inset-0 bg-[#C49A45] scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
             </MagneticButton>
           </nav>
 
@@ -114,23 +114,26 @@ export function Navigation() {
       </header>
 
       {/* Mobile Menu */}
-      <div className={`fixed inset-0 z-[9] bg-white transition-transform duration-700 ease-[cubic-bezier(0.85,0,0.15,1)] ${mobileMenuOpen ? 'translate-y-0 pointer-events-auto' : '-translate-y-full pointer-events-none'}`}>
-        <div className="p-8 flex justify-between items-center">
-          <Link href="/" onClick={() => setMobileMenuOpen(false)} className="text-xl font-display font-bold text-[#191919]">PeakFlow<span className="text-[#0272C9]">.</span></Link>
-          <button onClick={() => setMobileMenuOpen(false)}><X className="w-8 h-8" /></button>
+      <div className={`fixed inset-0 z-[10000] bg-[#FFFFFF] flex flex-col justify-between transition-transform duration-700 ease-[cubic-bezier(0.85,0,0.15,1)] ${mobileMenuOpen ? 'translate-y-0 pointer-events-auto' : '-translate-y-full pointer-events-none'}`}>
+        <div className="p-6 sm:p-8 flex justify-between items-center border-b border-[#0A0A0A]/5">
+          <Link href="/" onClick={() => setMobileMenuOpen(false)} className="text-xl font-display font-bold text-[#0A0A0A]">Arclyn<span className="text-[#C49A45]">.</span></Link>
+          <button onClick={() => setMobileMenuOpen(false)} className="p-2 text-[#0A0A0A] hover:text-[#C49A45] transition-colors"><X className="w-8 h-8" /></button>
         </div>
-        <div className="flex flex-col items-center justify-center h-full gap-8">
+        <div className="flex flex-col items-center justify-center py-12 gap-6 sm:gap-8 flex-1">
           {navLinks.map((link, i) => (
             <Link 
               key={link.name} 
               href={link.href} 
               onClick={() => setMobileMenuOpen(false)}
-              className="text-5xl md:text-7xl font-display font-bold text-[#191919] hover:text-[#0272C9] transition-colors"
-              style={{ transitionDelay: `${i * 100}ms` }}
+              className="text-3xl sm:text-5xl md:text-7xl font-display font-bold text-[#0A0A0A] hover:text-[#C49A45] transition-colors"
+              style={{ transitionDelay: `${i * 70}ms` }}
             >
               {link.name}
             </Link>
           ))}
+        </div>
+        <div className="p-6 sm:p-8 border-t border-[#0A0A0A]/5 text-center text-xs text-[#6B6F6A]">
+          © {new Date().getFullYear()} Arclyn Studio. All rights reserved.
         </div>
       </div>
     </>

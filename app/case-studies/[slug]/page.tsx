@@ -60,7 +60,7 @@ export default function CaseStudyPage({ params }: { params: Promise<{ slug: stri
             </Reveal>
 
             <Reveal delay={200}>
-              <div className="aspect-video w-full rounded-3xl overflow-hidden mb-40 bg-[#fcfcfc] border border-[#191919]/5">
+              <div className="aspect-video w-full rounded-3xl overflow-hidden mb-40 bg-[#FFFFFF] border border-[#191919]/5">
                 <img src={project.image} alt={project.title} className="w-full h-full object-cover" />
               </div>
             </Reveal>
@@ -73,7 +73,7 @@ export default function CaseStudyPage({ params }: { params: Promise<{ slug: stri
                 </p>
               </Reveal>
               
-              <Reveal delay={200} className="space-y-12 bg-[#fcfcfc] p-12 rounded-3xl border border-[#191919]/5">
+              <Reveal delay={200} className="space-y-12 bg-[#FFFFFF] p-12 rounded-3xl border border-[#191919]/5">
                  {project.results.map((result, i) => (
                    <div key={i}>
                       <span className="block text-[10px] font-black uppercase tracking-widest text-[#191919]/30 mb-2">{result.label}</span>

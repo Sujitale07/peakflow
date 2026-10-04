@@ -63,7 +63,7 @@ export default function CaseStudiesPage() {
               {PROJECTS.map((project, i) => (
                 <Reveal key={i} delay={i * 100} direction="up">
                   <Link href={`/case-studies/${project.slug}`} className="group cursor-pointer block">
-                    <div className="relative aspect-[4/5] overflow-hidden rounded-2xl mb-8 bg-[#fcfcfc] border border-[#191919]/5">
+                    <div className="relative aspect-[4/5] overflow-hidden rounded-2xl mb-8 bg-[#FFFFFF] border border-[#191919]/5">
                       <img 
                         src={project.image} 
                         alt={project.title}
