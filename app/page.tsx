@@ -15,26 +15,31 @@ import { Cursor } from "@/components/peakflow/ui/Cursor";
 import { Grain } from "@/components/peakflow/ui/Grain";
 import { ScrollProgress } from "@/components/peakflow/ui/ScrollProgress";
 import { Loader } from "@/components/peakflow/ui/Loader";
-import { BrandStory } from "@/components/peakflow/sections/BrandStory";
 import { Marquee } from "@/components/peakflow/ui/Marquee";
 
 export default function Page() {
   const [loading, setLoading] = useState(true);
 
   return (
-    <main className="bg-white min-h-screen font-sans selection:bg-[#0272C9] selection:text-white overflow-hidden">
+    <main className="bg-[#FFFFFF] min-h-screen font-sans selection:bg-[#C49A45] selection:text-white overflow-hidden">
       <style dangerouslySetInnerHTML={{ __html: `
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700;800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Outfit:wght@400;500;600;700;800;900&display=swap');
         
         body {
-          background-color: #ffffff;
-          color: #191919;
-          font-family: 'Inter', sans-serif;
+          background-color: #FFFFFF;
+          color: #0A0A0A;
+          font-family: 'Outfit', sans-serif;
           cursor: none;
         }
 
         .font-display {
-          font-family: 'Space Grotesk', sans-serif;
+          font-family: 'Outfit', sans-serif;
+          font-weight: 600;
+          letter-spacing: -0.02em;
+        }
+
+        .font-body {
+          font-family: 'Instrument Sans', sans-serif;
         }
 
         * {
@@ -58,7 +63,7 @@ export default function Page() {
         <Hero />
         <About />
         
-        <div className="py-20 border-y border-[#191919]/5 space-y-10">
+        <div className="py-20 border-y border-[#0A0A0A]/5 space-y-10">
           <Marquee 
             items={["WordPress", "Nepal Tourism", "Trekking", "Hotel Design", "Performance", "Pokhara"]} 
             speed={1.2}
@@ -71,7 +76,6 @@ export default function Page() {
         </div>
 
         <Services />
-        <BrandStory />
         <Portfolio />
         <Process />
         <Testimonials />

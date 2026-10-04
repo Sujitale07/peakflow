@@ -54,7 +54,7 @@ export default function BlogPage() {
             <div className="flex flex-col border-t border-[#191919]/10">
               {POSTS.map((post, i) => (
                 <Reveal key={i} delay={i * 100}>
-                  <Link href={`/blog/${post.slug}`} className="group relative py-20 border-b border-[#191919]/10 hover:bg-[#fcfcfc] transition-colors cursor-pointer px-4 md:px-10 flex flex-col md:flex-row justify-between items-start md:items-center gap-12 block">
+                  <Link href={`/blog/${post.slug}`} className="group relative py-20 border-b border-[#191919]/10 hover:bg-[#FFFFFF] transition-colors cursor-pointer px-4 md:px-10 flex flex-col md:flex-row justify-between items-start md:items-center gap-12 block">
                     <div className="max-w-3xl">
                       <div className="flex items-center gap-6 mb-6">
                         <span className="text-[10px] font-bold text-[#0272C9] uppercase tracking-widest">{post.category}</span>

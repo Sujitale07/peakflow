@@ -8,6 +8,11 @@ export function Cursor() {
   const [cursorText, setCursorText] = useState("");
 
   useEffect(() => {
+    // Disable custom cursor on mobile/touch devices
+    if (typeof window !== 'undefined' && window.matchMedia('(pointer: coarse)').matches) {
+      return;
+    }
+
     const cursor = cursorRef.current;
     const follower = followerRef.current;
     if (!cursor || !follower) return;
@@ -38,8 +43,8 @@ export function Cursor() {
       if (target.closest('button') || target.closest('a')) {
         gsap.to(follower, {
           scale: 3,
-          backgroundColor: "rgba(2, 114, 201, 0.1)",
-          borderColor: "#0272C9",
+          backgroundColor: "rgba(196, 154, 69, 0.15)",
+          borderColor: "#C49A45",
           duration: 0.3
         });
       }
@@ -49,8 +54,8 @@ export function Cursor() {
         setCursorText("VIEW");
         gsap.to(follower, {
           scale: 4,
-          backgroundColor: "#0272C9",
-          borderColor: "#0272C9",
+          backgroundColor: "#C49A45",
+          borderColor: "#C49A45",
           duration: 0.3
         });
       }
@@ -82,15 +87,15 @@ export function Cursor() {
 
   return (
     <>
-      {/* Small Dot */}
+      {/* Small Dot - hidden on mobile/touch */}
       <div 
         ref={cursorRef}
-        className="fixed top-0 left-0 w-2 h-2 bg-[#0272C9] rounded-full pointer-events-none z-[10000001] mix-blend-difference -translate-x-1/2 -translate-y-1/2"
+        className="hidden lg:block fixed top-0 left-0 w-2.5 h-2.5 bg-white rounded-full pointer-events-none z-[10000001] mix-blend-difference -translate-x-1/2 -translate-y-1/2"
       />
-      {/* Large Follower */}
+      {/* Large Follower - hidden on mobile/touch */}
       <div 
         ref={followerRef}
-        className="fixed top-0 left-0 w-10 h-10 border border-[#191919]/20 rounded-full pointer-events-none z-[10000001] -translate-x-1/2 -translate-y-1/2 flex items-center justify-center overflow-hidden"
+        className="hidden lg:block fixed top-0 left-0 w-10 h-10 border border-[#0A0A0A]/20 rounded-full pointer-events-none z-[10000001] -translate-x-1/2 -translate-y-1/2 flex items-center justify-center overflow-hidden"
       >
         <span className="text-[0.375rem] font-black text-white tracking-widest">{cursorText}</span>
       </div>

@@ -18,20 +18,20 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "PeakFlow Web Studio | Premier WordPress Design in Nepal",
+  title: "Arclyn Studio | Premier WordPress Design in Nepal",
   description: "Boutique web design studio specializing in high-performance WordPress themes for adventure tourism, hospitality, and global visionary brands. Based in Nepal.",
-  keywords: ["WordPress Nepal", "Web Design Nepal", "Tourism Web Design", "Hotel Website Nepal", "PeakFlow Web Studio", "Pokhara Web Design"],
+  keywords: ["WordPress Nepal", "Web Design Nepal", "Tourism Web Design", "Hotel Website Nepal", "Arclyn Studio", "Pokhara Web Design"],
   openGraph: {
-    title: "PeakFlow Web Studio | Premier WordPress Design in Nepal",
+    title: "Arclyn Studio | Premier WordPress Design in Nepal",
     description: "Boutique web design studio specializing in high-performance WordPress themes for adventure tourism and hospitality.",
-    url: "https://peakflow.studio",
-    siteName: "PeakFlow Web Studio",
+    url: "https://arclyn.studio",
+    siteName: "Arclyn Studio",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "PeakFlow Web Studio | Premier WordPress Design in Nepal",
+    title: "Arclyn Studio | Premier WordPress Design in Nepal",
     description: "Boutique web design studio specializing in high-performance WordPress themes.",
   },
 };
@@ -39,10 +39,10 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
-  "name": "PeakFlow Web Studio",
-  "image": "https://peakflow.studio/logo.png",
-  "@id": "https://peakflow.studio",
-  "url": "https://peakflow.studio",
+  "name": "Arclyn Studio",
+  "image": "https://arclyn.studio/logo.png",
+  "@id": "https://arclyn.studio",
+  "url": "https://arclyn.studio",
   "telephone": "+977-9800000000",
   "address": {
     "@type": "PostalAddress",
@@ -69,8 +69,8 @@ const jsonLd = {
     "closes": "18:00"
   },
   "sameAs": [
-    "https://instagram.com/peakflow.studio",
-    "https://linkedin.com/company/peakflow-studio"
+    "https://instagram.com/arclyn.studio",
+    "https://linkedin.com/company/arclyn-studio"
   ]
 };
 
